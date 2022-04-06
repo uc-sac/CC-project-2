@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS project 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/xp.css">
+</head>
+<body>
+  <div class="window" style="width:500px">
+    <div class="title-bar">
+      <div class="title-bar-text">Paragraph
+      </div>
+      <div class="title-bar-controls">
+        <button aria-label="Minimize"></button>
+        <button aria-label="Maximize"></button>
+        <button aria-label="Close"></button>
+      </div>
+    </div>
+    <div class="window-body">
+      <menu role="tablist">
+        <button aria-selected="true"><u>I</u>ndents and Spacing
+        </button>
+        <button>Line and <u>P</u>age Breaks</button>
+      </menu>
+      <article role="tabpanel">
+        <div class="headingContainer">
+          <p>General</p>
+          <div class="drawLine">
+            <hr>
+          </div>
+        </div>
+        <div class="gridlayout">
+          <label class="Width100" for="alignment">Ali<u>g</u>nment:</label>
+          <select id="alignment">
+            <option selected>Centered</option>
+          </select>
+          <label class="Width100 pl25" for="outlineLevel"><u>O</u>utline Level:</label>
+          <select id="outlineLevel">
+            <option selected>Body text</option>
+          </select>
+        </div>
+        <div class="headingContainer">
+          <p>Indentation</p>
+          <div class="drawLine">
+            <hr>
+          </div>
+        </div>
+        <div class="gridlayout">
+          <label class="Width100" for="left"><u>L</u>eft:</label>
+          <select id="left">
+            <option selected>0"</option>
+          </select>
+          <label class="Width100 pl25" for="special"><u>S</u>pecial:</label>
+          <label class="Width100" for="by">B<u>y</u>:</label>
+        </div>
+        <div class="gridlayout">
+          <label class="Width100" for="right"><u>R</u>ight:</label>
+          <select id="right">
+            <option selected>0"</option>
+          </select>
+          <div class="pl25">
+            <select id="special">
+              <option selected>(none)</option>
+            </select>
+          </div>
+          <select id="by">
+          </select>
+        </div>
+        <div class="headingContainer">
+          <p >Spacing</p>
+          <div class="drawLine">
+            <hr>
+          </div>
+        </div>
+        <div class="gridlayout">
+          <label class="Width100" for="before"><u>B</u>efore:</label>
+          <select id="before">
+            <option selected>18 pt"</option>
+          </select>
+          <label class="Width100 pl25" for="lineSpacing">Li<u>n</u>e spacing:</label>
+          <label class="Width100" for="at"><u>A</u>t:</label>
+        </div>
+        <div class="gridlayout">
+          <label class="Width100" for="after">Aft<u>e</u>r:</label>
+          <select id="after">
+            <option selected>0 pt</option>
+          </select>
+          <div class="pl25">
+            <select id="lineSpacing">
+              <option selected>Single</option>
+            </select>
+          </div>
+          <select id="at">
+            </select>
+        </div>
+        <div class="pl5">
+          <input type="checkbox" id="ve1" disabled>
+            <label class="grey" for="ve1">Don't add space between paragraphs of the same style</label><br>
+          </input>
+        </div>
+        <div class="headingContainer">
+          <p >Preview</p>
+          <div class="drawLine">
+            <hr>
+          </div>
+        </div>
+        <textarea class="textBox">
+        </textarea>
+      </article>
+      <div class="btnContainer">
+        <button>Tabs...</button>
+        <button class="okBtn" autofocus>OK</button>
+        <button class="cancelBtn">Cancel</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
